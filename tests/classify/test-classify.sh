@@ -16,7 +16,5 @@ done < input.txt
 
 diff -y --suppress-common-lines expected.out actual.out | wc -l > failed.txt
 
-rm -f expected.out
-rm -f actual.out
 rm -f classify-copilot.py
 rm -f classify-solution.py
