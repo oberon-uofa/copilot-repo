@@ -1,0 +1,10 @@
+#!/bin/expect
+
+set script [lindex $argv 0]
+set arg [lindex $argv 1]
+
+spawn -noecho python3 $script
+
+expect "input: " 
+send -- "$arg\r"
+expect eof

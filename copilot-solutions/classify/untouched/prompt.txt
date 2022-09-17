@@ -1,4 +1,3 @@
-'''
 Write a program, in a file named classify.py, that behaves as follows:
 
 It reads in an input string using the Python statement
@@ -16,15 +15,3 @@ apple, vowel
 CSc 120, consonant
 32F = 0C, neither
 'Twas brillig, neither
-'''
-
-# Your code goes here
-
-def main():
-    input_string = input("input: ")
-    if input_string[0] in "aeiouAEIOU":
-        print("vowel")
-    elif input_string[0] in "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ":
-        print("consonant")
-    else:
-        print("neither")
